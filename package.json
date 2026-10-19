@@ -1,0 +1,15 @@
+{
+  "name": "figbridge-home-notebook",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Miranda’s home notebook: room directions, little projects, and good company.",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "start": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

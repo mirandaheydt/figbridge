@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4d293e">
+  <meta name="description" content="Miranda’s home notebook. Colorful room ideas, small projects, and good evenings at Figbridge.">
+  <title>Figbridge — A home in the making</title>
+  <link rel="icon" type="image/svg+xml" href="assets/fig.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="Figbridge home"><img src="assets/fig.svg" width="37" height="42" alt="">Figbridge<span class="brand-dot">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#rooms">The rooms</a>
+      <a href="#projects">Little projects</a>
+      <a class="nav-host" href="#evenings">Good company <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-sun" aria-hidden="true">✳</span> MIRANDA’S HOME NOTEBOOK</p>
+        <h1 id="hero-title">A home in<br>the <em>making.</em></h1>
+        <p class="intro">A little color. A good book. Friends around the table. A place to collect the ideas that make this house feel like us.</p>
+        <a class="button plum" href="#projects">Find a little project <span aria-hidden="true">↗</span></a>
+        <p class="hero-footnote"><span aria-hidden="true">⌂</span> Rooted in Cary, North Carolina.</p>
+      </div>
+      <figure class="hero-art">
+        <img src="assets/house.svg" width="760" height="660" alt="An illustrated cream colonial house with a plum door, fig trees, and two cats in the garden.">
+        <figcaption><span class="caption-line"></span> A new chapter, with room to grow.</figcaption>
+        <div class="round-seal" aria-hidden="true"><span>EST. IN</span><strong>good<br>company</strong><span>AND GOOD COLOR</span></div>
+      </figure>
+    </section>
+
+    <div class="palette-band">
+      <div class="wrap palette-inner">
+        <p>Mauve walls. Green sofas.<br><em>Two very good cats.</em></p>
+        <div class="palette" aria-label="The house palette: fig, mauve, moss, honey, and cream">
+          <span><i style="--swatch:#4d293e"></i>Fig</span><span><i style="--swatch:#b88e9c"></i>Mauve</span><span><i style="--swatch:#667052"></i>Moss</span><span><i style="--swatch:#c99a45"></i>Honey</span><span><i style="--swatch:#eee4d0"></i>Cream</span>
+        </div>
+      </div>
+    </div>
+
+    <section id="rooms" class="rooms-section wrap section-space" aria-labelledby="rooms-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / THE ROOMS</p><h2 id="rooms-title">Collected, <em>not coordinated.</em></h2></div><p>Keep the pieces you love.<br>Build the rest around them.</p></div>
+      <div class="room-grid">
+        <button class="room-card" data-room="piano" aria-haspopup="dialog"><div class="room-picture"><img src="assets/piano.svg" width="600" height="460" alt="A mauve music room with a baby grand piano, bookshelves, and a golden lamp."><span class="room-number">01</span><span class="picture-arrow" aria-hidden="true">↗</span></div><div class="room-heading"><h3>The music room</h3><span>MOODY & MAUVE</span></div><p>A baby grand, soft curtains, and a place to stay for one more song.</p><span class="text-link">Open the room notes <span aria-hidden="true">↗</span></span></button>
+        <button class="room-card" data-room="living" aria-haspopup="dialog"><div class="room-picture"><img src="assets/living.svg" width="600" height="460" alt="A cozy living room with a green sofa, colorful rug, fireplace, and books."><span class="room-number">02</span><span class="picture-arrow" aria-hidden="true">↗</span></div><div class="room-heading"><h3>The living room</h3><span>COLOR & COMPANY</span></div><p>Green sofas, warm floors, and game nights that run a little late.</p><span class="text-link">Open the room notes <span aria-hidden="true">↗</span></span></button>
+        <button class="room-card" data-room="kitchen" aria-haspopup="dialog"><div class="room-picture"><img src="assets/kitchen.svg" width="600" height="460" alt="A kitchen concept with moss cabinetry, patterned backsplash, and brass handles."><span class="room-number">03</span><span class="picture-arrow" aria-hidden="true">↗</span></div><div class="room-heading"><h3>The kitchen</h3><span>A FRESH PERSPECTIVE</span></div><p>New color, a thoughtful backsplash, and little details with a big effect.</p><span class="text-link">Open the room notes <span aria-hidden="true">↗</span></span></button>
+      </div>
+      <p class="section-note">Illustrated directions inspired by your ideas. A place to explore what comes next.</p>
+    </section>
+
+    <section class="projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="wrap project-layout">
+        <div class="project-intro"><p class="eyebrow">02 / LITTLE PROJECTS</p><h2 id="projects-title">One thing<br>at a <em>time.</em></h2><p>A home is a long game. Park the big ideas here, then choose something small for your next free afternoon.</p><div class="progress-line"><span id="progress-label">0 of 6 projects complete</span><div class="progress-track" role="progressbar" aria-label="Projects complete" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0"><div id="progress-fill"></div></div></div><button class="button plum" id="new-project">Add a little project <span aria-hidden="true">＋</span></button><p class="local-note">Your edits stay in this browser. Export a copy to keep a backup or move to another device.</p><div class="data-actions"><button id="export">Export notebook <span aria-hidden="true">↓</span></button><button id="import">Import <span aria-hidden="true">↑</span></button><input type="file" id="import-file" accept="application/json,.json" hidden></div></div>
+        <div class="project-board">
+          <div class="board-top"><div class="filter-tabs" role="group" aria-label="Filter projects by status"><button data-status="all" aria-pressed="true">All</button><button data-status="idea" aria-pressed="false">Ideas</button><button data-status="planned" aria-pressed="false">Up next</button><button data-status="done" aria-pressed="false">Done</button></div><label class="room-filter"><span class="sr-only">Filter projects by room</span><select id="room-filter"><option value="all">Every room</option><option value="piano">Music room</option><option value="living">Living room</option><option value="kitchen">Kitchen</option><option value="other">Elsewhere</option></select></label></div>
+          <p class="board-hint">Starter ideas from your room plans. Edit any project to make it yours.</p>
+          <div id="project-list" aria-live="polite"></div>
+          <p class="empty-state" id="empty-projects" hidden>No projects here yet. Leave a little room for a new idea.</p>
+          <div class="board-bottom"><span id="project-count">6 little possibilities</span><span>Small steps count. <span aria-hidden="true">✳</span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="evenings-section wrap section-space" id="evenings" aria-labelledby="evenings-title">
+      <div class="evening-art" aria-hidden="true"><div class="art-label">THE BEST ROOMS HAVE PEOPLE IN THEM.</div><svg viewBox="0 0 520 470" fill="none"><path d="M49 346c-23-107 29-211 132-252C300 46 425 112 462 220c21 63-7 139-61 179H108Z" fill="#e9d9be"/><ellipse cx="259" cy="334" rx="193" ry="57" fill="#8a514b"/><path d="M97 333v36c0 49 327 49 327 0v-36" fill="#703c39"/><path d="m134 372-17 69m272-69 17 69" stroke="#4d293e" stroke-width="15"/><ellipse cx="259" cy="324" rx="164" ry="42" fill="#d19c75"/><g transform="rotate(-12 230 293)"><rect x="165" y="250" width="115" height="79" rx="3" fill="#eee5cf"/><path d="M176 263h92v53h-92z" stroke="#4d293e" stroke-width="3"/><path d="M199 263v53m23-53v53m23-53v53m-69-35h92m-92 18h92" stroke="#b99d96" stroke-width="2"/><circle cx="209" cy="289" r="6" fill="#667052"/><circle cx="254" cy="306" r="6" fill="#667052"/><path d="m231 268 9 9m0-9-9 9m-51 30 9 9m0-9-9 9" stroke="#4d293e" stroke-width="3"/></g><path d="M321 286h61m-29-47v44c0 17-24 17-24 0v-44z" fill="#d5b7b9" stroke="#4d293e" stroke-width="3"/><path d="M341 294v24m-12 0h24" stroke="#4d293e" stroke-width="3"/><ellipse cx="134" cy="313" rx="26" ry="12" fill="#f7efdf"/><path d="m126 305 12-12 10 15Z" fill="#c99a45"/><rect x="295" y="191" width="11" height="87" rx="3" fill="#f4e0a5"/><path d="M300 187c-17-10 4-29 4-29s14 25-4 29Z" fill="#c88a40"/><path d="M286 279h29m-15-1v30m-15 0h30" stroke="#4d293e" stroke-width="4"/><path d="M95 169c23-30 59-35 72-15 14 21-2 44-23 42-12-1-14-9-23-8-13 2-21 0-26-19Z" fill="#b88e9c"/><path d="m94 167-8-20 19 7m53-3 18-17-1 26" fill="#b88e9c"/><path d="M110 166h1m31-3h1" stroke="#4d293e" stroke-linecap="round" stroke-width="5"/><path d="M395 157c-20-37-44-40-58-28-24 21-1 53 25 46l22 2Z" fill="#c99a45"/><path d="m342 132-2-20 18 11m22 15 17-16-1 28" fill="#c99a45"/><path d="M353 144h1m26 7h1" stroke="#4d293e" stroke-linecap="round" stroke-width="5"/><path d="M246 104v20m-10-10h20m-32 53v14m-7-7h14m164 37v18m-9-9h18" stroke="#b88e9c" stroke-width="3"/></svg><p>Come for a game.<br><em>Stay for another round.</em></p></div>
+      <div class="evening-content"><p class="eyebrow">03 / GOOD COMPANY</p><h2 id="evenings-title">Make an <em>evening of it.</em></h2><p>You bring the people. Start with a loose plan, then leave room for the good part.</p><form id="evening-form"><div class="form-pair"><label>The occasion<select id="occasion"><option value="games">Game night</option><option value="music">An evening of music</option><option value="quiet">Books & a quiet catch-up</option></select></label><label>People at the table<input id="guests" type="number" min="2" max="12" value="4" required></label></div><button type="submit" class="button outline">Make a simple plan <span aria-hidden="true">↗</span></button></form><div id="evening-plan" class="evening-plan" aria-live="polite"></div><p class="hosting-note">A starting point for a future get-together. No invitations are sent.</p></div>
+    </section>
+
+    <section class="closing"><div class="wrap closing-inner"><span class="asterisk" aria-hidden="true">✳</span><h2>A little less perfect.<br><em>A little more us.</em></h2><p>For the color experiments, the half-finished crochet,<br>the next chapter, and the cats on the good chair.</p></div></section>
+  </main>
+
+  <footer class="wrap footer"><a class="brand" href="#"><img src="assets/fig.svg" width="28" height="32" alt="">Figbridge.</a><p>Miranda’s home notebook · Cary, NC</p><a href="#hero-title">Back to the top <span aria-hidden="true">↑</span></a></footer>
+  <div id="toast" role="status" hidden><span></span><button type="button" hidden>Undo</button></div>
+  <dialog id="room-dialog" aria-labelledby="room-dialog-title"><button class="dialog-close" aria-label="Close room notes">×</button><div id="room-dialog-content"></div></dialog>
+  <dialog id="project-dialog" aria-labelledby="project-dialog-title"><button class="dialog-close" aria-label="Close project editor">×</button><p class="eyebrow">MAKE A LITTLE ROOM</p><h2 id="project-dialog-title">A new <em>possibility.</em></h2><form id="project-form"><input type="hidden" id="project-id"><label>What’s the project?<input id="project-title" maxlength="120" placeholder="A small idea, a big difference…" required></label><div class="form-pair"><label>The room<select id="project-room"><option value="piano">Music room</option><option value="living">Living room</option><option value="kitchen">Kitchen</option><option value="other">Elsewhere</option></select></label><label>Where it stands<select id="project-status"><option value="idea">An idea</option><option value="planned">Up next</option><option value="done">Done</option></select></label></div><label>Notes to come back to<textarea id="project-note" rows="4" maxlength="2000" placeholder="Colors, measurements, the next tiny step…"></textarea></label><div class="dialog-actions"><button type="submit" class="button plum">Save project <span aria-hidden="true">↗</span></button><button id="delete-project" type="button" class="delete-button">Delete project</button></div></form></dialog>
+  <dialog id="import-dialog" aria-labelledby="import-title"><button class="dialog-close" aria-label="Cancel import">×</button><p class="eyebrow">YOUR NOTEBOOK</p><h2 id="import-title">Bring it <em>home.</em></h2><p id="import-description"></p><p>This replaces the notebook in this browser. Export your current notebook first if you want to keep a copy.</p><div class="dialog-actions"><button id="confirm-import" class="button plum">Replace notebook</button><button id="cancel-import" class="text-link">Keep current notebook</button></div></dialog>
+  <noscript><p class="noscript">JavaScript is needed for the project notebook and evening planner. You can still explore the room illustrations.</p></noscript>
+</body>
+</html>
